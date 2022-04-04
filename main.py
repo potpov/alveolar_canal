@@ -187,11 +187,10 @@ def main(experiment_name, args):
 
 
 if __name__ == '__main__':
-    # execute the following line if there are new data in the dataset to be fixed
-    # utils.fix_dataset_folder(r'Y:\work\datasets\maxillo\VOLUMES')
 
-    RESULTS_DIR = r'Y:\work\results' if socket.gethostname() == 'DESKTOP-I67J6KK' else r'/nas/softechict-nas-2/mcipriano/results/maxillo/3D'
-    BASE_YAML_PATH = os.path.join('configs', 'config.yaml') if socket.gethostname() == 'DESKTOP-I67J6KK' else os.path.join('configs', 'remote_3D.yaml')
+    PC_NAME = "YOUR LOCAL HOSTNAME"
+    RESULTS_DIR = r'Local Project Directory' if socket.gethostname() == PC_NAME else r'Remote Project Directory'
+    BASE_YAML_PATH = os.path.join('configs', 'config.yaml') if socket.gethostname() == PC_NAME else os.path.join('configs', 'remote_3D.yaml')
 
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('--base_config', default="config.yaml", help='path to the yaml config file')

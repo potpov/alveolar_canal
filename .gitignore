@@ -2,3 +2,5 @@
 /__pycache__
 venv
 __pycache__
+/visualize_results.py
+/configs
