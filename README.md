@@ -3,7 +3,7 @@
 This repository contains the material from the paper "Improving Segmentation of the Inferior Alveolar Nerve through Deep Label Propagation".
 
 In particular, this repo is dedicated to the 3D neural network for the alveolar canal segmentation.
-our new 3D dense dataset can be downloaded [here](#linkhere).
+our new 3D dense dataset can be downloaded [here](https://ditto.ing.unimore.it/maxillo/dataset/).
 
 ## Usage
 you can run the experiments as follow:
